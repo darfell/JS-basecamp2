@@ -1,0 +1,71 @@
+* {
+    order: 1px solid black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+table {
+    margin-right: 150px;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+table td {
+    width: 100px;
+    height: 100px;
+    border-bottom: 5px solid red;
+    border-right: 5px solid red;
+}
+table img {
+    width: 80px;
+    height: 80px;
+    display: block;    
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signs {    
+    position: relative;
+    align-self: flex-start;
+}
+.signs .x-sign {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    cursor:pointer;
+    background-image: url(images/x-sign.png);
+    background-size: cover;
+}
+.signs .zero-sign {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 90px;
+    top: 0;
+    cursor:pointer;
+    background-image: url(images/zero-sign.png);
+    background-size: cover;
+}
+
+.temp {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+#error {
+    height: 30px;
+    margin: 10px 0;
+}
